@@ -1,0 +1,5 @@
+# dependencies
+node_modules/
+
+# claude workspace files
+.claude/worktrees/
