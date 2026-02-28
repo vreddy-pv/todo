@@ -1,0 +1,36 @@
+<h3>Transactions</h3>
+<div>
+  <label for="accountId">Account ID:</label>
+  <input id="accountId" placeholder="Account ID" type="number" [(ngModel)]="newAccountId" />
+  <label for="amount">Amount:</label>
+  <input id="amount" placeholder="Amount" type="number" [(ngModel)]="newAmount" />
+  <label for="date">Date:</label>
+  <input id="date" placeholder="Date (YYYY-MM-DD)" type="date" [(ngModel)]="newDate" />
+  <label for="description">Description:</label>
+  <input id="description" placeholder="Description" [(ngModel)]="newDescription" />
+  <button (click)="addTransaction()" class="btn btn-success btn-sm">Add Transaction</button>
+</div>
+<table class="table table-striped mt-2">
+  <thead class="bg-primary text-white">
+    <tr>
+      <th>ID</th>
+      <th>Account ID</th>
+      <th>Amount</th>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tx of transactions">
+      <td>{{ tx.id }}</td>
+      <td>{{ tx.accountId }}</td>
+      <td>{{ tx.amount }}</td>
+      <td>{{ tx.date }}</td>
+      <td>{{ tx.description }}</td>
+      <td>
+        <button class="btn btn-danger btn-sm" (click)="delete(tx)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

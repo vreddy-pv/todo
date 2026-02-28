@@ -1,0 +1,22 @@
+/* Dashboard styling */
+.dashboard {
+  background-color: #f5f5f5; /* light gray background */
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.dashboard-title {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-nav a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  color: #1976d2;
+}
+
+.dashboard-nav a:hover {
+  text-decoration: underline;
+}
+

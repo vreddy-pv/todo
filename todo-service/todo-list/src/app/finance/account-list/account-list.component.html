@@ -1,0 +1,28 @@
+<h3>Accounts</h3>
+<div>
+  <label for="name">Name:</label>
+  <input id="name" placeholder="Name" [(ngModel)]="newName" />
+  <label for="balance">Balance:</label>
+  <input id="balance" type="number" placeholder="Balance" [(ngModel)]="newBalance" />
+  <button (click)="addAccount()" class="btn btn-success btn-sm">Add Account</button>
+</div>
+<table class="table table-striped mt-2">
+  <thead class="bg-primary text-white">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Balance</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let acc of accounts">
+      <td>{{ acc.id }}</td>
+      <td>{{ acc.name }}</td>
+      <td>{{ acc.balance }}</td>
+      <td>
+        <button class="btn btn-danger btn-sm" (click)="delete(acc)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
