@@ -1,4 +1,4 @@
-package com.example.todo;
+package com.vrgt.todo;
 
 import jakarta.persistence.*;
 

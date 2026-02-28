@@ -1,4 +1,4 @@
-package com.example.todo;
+package com.vrgt.todo;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

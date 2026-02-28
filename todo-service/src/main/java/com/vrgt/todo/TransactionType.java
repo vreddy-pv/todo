@@ -1,4 +1,4 @@
-package com.example.todo;
+package com.vrgt.todo;
 
 public enum TransactionType {
     CREDIT,

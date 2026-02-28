@@ -1,4 +1,4 @@
-package com.example.todo;
+package com.vrgt.todo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
