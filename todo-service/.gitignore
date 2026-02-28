@@ -1,0 +1,27 @@
+# Compiled Java code and Maven build outputs
+**/target/
+*.class
+*.jar
+
+# Java crash reports
+hs_err_pid*.log
+
+# Local databases or data stores
+**/data/
+
+# Local IDE and AI tool configurations
+.vscode/
+**/.claude/
+**/.claude-code/
+
+# Logs and temporary files
+**/logs/
+**/tmp/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment variable files
+.env
+
