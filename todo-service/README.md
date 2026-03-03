@@ -14,7 +14,7 @@ This repository contains the Spring Boot backend for the Todo application. It ex
 
 ```bash
 # build the project
-dotnet mvn clean package
+mvn clean package
 
 # run the application
 mvn spring-boot:run

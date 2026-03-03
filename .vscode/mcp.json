@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "todo-service-mcp": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["server/server.py"]
+    }
+  }
+}
